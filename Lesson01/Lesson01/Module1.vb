@@ -10,7 +10,9 @@ Module Module1
         'Aufruf der Methode Datentypen
         'Datentypen()
 
-        WeitereWichtigeDatentypen()
+        'WeitereWichtigeDatentypen()
+
+        Rechenoperatoren()
     End Sub
 
     Private Sub Datentypen()
