@@ -44,8 +44,8 @@ Module Module1
 
         'Beispiel für einen beliebigen Datentyp
         'Da alle Datentypen von object abgeleitet sind kann object alles annehmen
-        Dim ertsesObject = "Ein String in einem Objekt"
-        Dim zweitesObject = 123
+        Dim ertsesObject As Object = "Ein String in einem Objekt"
+        Dim zweitesObject As Object = 123
 
         'Ausgabe
         'Bevor die Ausgabe ausgegeben wird, wird die Zeile umgebrochen
