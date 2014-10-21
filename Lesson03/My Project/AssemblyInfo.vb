@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Die Werte der Assemblyattribute überprüfen
 
-<Assembly: AssemblyTitle("ConsoleApplication1")> 
+<Assembly: AssemblyTitle("Lesson03")> 
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("BMW Group")> 
-<Assembly: AssemblyProduct("ConsoleApplication1")> 
+<Assembly: AssemblyProduct("Lesson03")> 
 <Assembly: AssemblyCopyright("Copyright © BMW Group 2014")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'Die folgende GUID bestimmt die ID der Typbibliothek, wenn dieses Projekt für COM verfügbar gemacht wird
-<Assembly: Guid("089f17f4-0ebe-4fcc-bd1d-369bf0c04ec2")> 
+<Assembly: Guid("73cdfe41-8bcd-42f6-a550-03e0ed6c107f")> 
 
 ' Versionsinformationen für eine Assembly bestehen aus den folgenden vier Werten:
 '
