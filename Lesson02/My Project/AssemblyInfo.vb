@@ -10,9 +10,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("Lesson02")> 
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("BMW Group")> 
+<Assembly: AssemblyCompany("")> 
 <Assembly: AssemblyProduct("Lesson02")> 
-<Assembly: AssemblyCopyright("Copyright © BMW Group 2014")> 
+<Assembly: AssemblyCopyright("")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
