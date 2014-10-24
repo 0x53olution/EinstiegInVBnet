@@ -4,6 +4,11 @@ Option Explicit On
 Module Module1
 
     Sub Main()
+        'ErsteKlasse()
+        ZweiteKlasse()
+    End Sub
+
+    Private Sub ErsteKlasse()
         'Klasse instanziieren
         'Objektvariable Mitarbeiter as Typ der zu instanziierenden Klasse definieren.
         'Sie dient zum Zugriff auf die Elemente der Klasse.
@@ -22,6 +27,25 @@ Module Module1
         Angestellter.nachname = "Ballmer"
         Angestellter.vorname = "Steve"
 
+        'Ausgabe
+        Console.WriteLine("Erste Instanz: " & Mitarbeiter.vorname & " " & Mitarbeiter.nachname & " Zweite Instanz: " & Angestellter.vorname & " " & Angestellter.nachname)
+        Console.Read()
+    End Sub
+
+    Private Sub ZweiteKlasse()
+        Dim Firmenwagen As New Auto
+
+        'Private Klassenmember können nicht geshen werden - _hersteller
+        'Kommentar in der nächsten Zeile aufheben um über IntelliSense das Angebot der zugreifbaren Member zu sehen
+        ' Firmenwagen._hersteller
+
+        Firmenwagen.farbe = "rot"
+
+        Firmenwagen.Beschleunigen(100)
+
+        Console.WriteLine("Mein Firmenwagen hat die Farbe " & Firmenwagen.farbe)
+        Console.WriteLine("Mein Firmenwagen fährt gerade " & Firmenwagen.geschwindigkeit & "km/h")
+        Console.Read()
     End Sub
 
 End Module
