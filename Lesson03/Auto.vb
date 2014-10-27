@@ -7,7 +7,7 @@
     Public farbe As String
     Public geschwindigkeit As Integer
 
-    'Für Funktionen und Sub´s gilt das gleiche Publich Funktionen können auch von Aussen genutzt werden.
+    'Für Funktionen und Sub´s gilt das gleiche Public Funktionen können auch von Aussen genutzt werden.
     Public Function Beschleunigen(ByVal wert As Integer) As Integer
         geschwindigkeit = geschwindigkeit + wert
         Return geschwindigkeit

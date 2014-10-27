@@ -3,9 +3,53 @@ Option Explicit On
 
 Module Module1
 
+    'Klassenweite Variable
+    Dim _isActiveKlasse1 As Boolean = True
+    'Der Übersicht und Lesbarkeit halber besser (Klassenvariablen die mit Dim deklarietrt werden sind automatisch Private)
+    Private _isActiveKlasse2 As Boolean = True
+
     Sub Main()
+        AccessLevel()
+        'AccessLevelTest()
         'ErsteKlasse()
-        ZweiteKlasse()
+        'ZweiteKlasse()
+    End Sub
+
+    'Gültigkeitsbereiche von Variablen
+    Public Sub AccessLevel()
+        Dim isActive As Boolean = True
+
+        If isActive Then
+            Console.WriteLine("Variable ist " & isActive)
+        End If
+
+        Console.Read()
+    End Sub
+
+    Private Sub AccessLevelTest()
+        'Auf eine Variable in einer anderen Prozedur kann nicht zugegriffen werden
+        'If isActive Then
+        '    Console.WriteLine("Variable ist " & isActive)
+        'End If
+
+        'Klassenvariablen können problemlos erreicht werden
+        If _isActiveKlasse1 Then
+            Console.WriteLine("_isActiveKlasse1 ist " & _isActiveKlasse1)
+        End If
+
+        If _isActiveKlasse2 Then
+            Console.WriteLine("_isActiveKlasse2 ist " & _isActiveKlasse2)
+        End If
+
+        'Variablen aus anderen Klassen die öffentlich sind kann zugegriffen werden
+        Dim MeineAccessKlasse As New Access
+        Dim oeffentlicheVariable = MeineAccessKlasse.isRunning
+        'Auf die Variable in der öffentlichen Prozedur kann nicht zugegriffen werden
+        'Dim prozedurVariable = MeineAccessKlasse.name
+
+        Console.WriteLine("Die öffentliche Klassen Variable aus der Access Klasse: " & oeffentlicheVariable)
+
+        Console.Read()
     End Sub
 
     Private Sub ErsteKlasse()

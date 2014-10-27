@@ -6,6 +6,7 @@ Public Class Person
 
     'Klassen bestehen aus Membervariablen und Runmpfdefinitionen die die Membervariablen einschliessen
     'und der Klasse ihren Namen verleihen
+    'Person ist ein Beispiel für eine einfach und sehr kleine Klasse
     Public nachname As String
     Public vorname As String
     Public groesse As Integer
