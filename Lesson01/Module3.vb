@@ -1,4 +1,7 @@
-﻿Module Module3
+﻿Option Strict On
+Option Explicit On
+
+Module Module3
 
     Public Sub Rechenoperatoren()
         Dim zahlA As Integer = 10

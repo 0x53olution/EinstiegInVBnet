@@ -1,4 +1,8 @@
-﻿Public Class Auto
+﻿Option Strict On
+Option Explicit On
+
+
+Public Class Auto
 
     'Privater Member der nur in dieser Klasse verwendet werden kann
     Private _hersteller As String = "BMW"

@@ -1,4 +1,7 @@
-﻿Public Class Access
+﻿Option Strict On
+Option Explicit On
+
+Public Class Access
 
     'Öffentliche Variable die auch von anderen Klassen zugegriffen werden kann
     Public isRunning As Boolean = True
